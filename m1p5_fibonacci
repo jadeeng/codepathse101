@@ -1,0 +1,38 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+#
+# Complete the 'fibonacci' function below.
+#
+# The function accepts INTEGER n as parameter.
+# and prints out the nth value of the fibonacci
+# sequence
+#
+
+def fibonacci(n):
+    i=0
+    n1=0
+    n2=1
+    temp=0
+    if n!=0:
+        while n>i:
+            temp=n1+n2
+            n1=n2
+            n2=temp
+            i=i+1
+        print (n1)
+    else:
+        print("0")
+
+
+    # Write your code here
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    fibonacci(n)
